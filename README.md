@@ -48,7 +48,7 @@ The installation is easy. You can download the pre-built binaries for your platf
 ### From Source
 
 ```sh
-▶ GO111MODULE=on go get -u -v github.com/LeakIX/wpfinger/cmd/wpfinger
+▶ go install github.com/LeakIX/wpfinger/cmd/wpfinger@latest
 ▶ ${GOPATH}/bin/wpfinger -h
 ```
 
