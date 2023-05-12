@@ -1,0 +1,11 @@
+kind: pipeline
+name: default
+
+steps:
+  - name: gobuild
+    image: gobuild:v1
+    commands:
+      - go get ./...
+      - GOOS=windows GOARCH=amd64 go build -buildvcs=false -o wpfinger.exe ./cmd/wpfinger
+      - go build -buildvcs=false ./cmd/wpfinger
+
