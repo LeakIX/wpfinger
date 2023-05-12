@@ -1,4 +1,4 @@
-module github.com/LeakIX/wpscan
+module github.com/LeakIX/wpfinger
 
 go 1.19
 
